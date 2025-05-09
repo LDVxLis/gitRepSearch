@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-main: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --color-bg: #242424;
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-link: #646cff;
+  --color-link-hover: #535bf2;
+  --color-button: #1a1a1a;
+  --color-button-hover: #333;
+
+  --radius: 8px;
+  --transition: 0.25s;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+button {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6em 1.2em;
+  background-color: var(--color-button);
+  color: var(--color-text);
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+button:hover {
+  background-color: var(--color-button-hover);
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1em;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #ffffff;
+    --color-text: #213547;
+    --color-link: #646cff;
+    --color-link-hover: #747bff;
+    --color-button: #f9f9f9;
+    --color-button-hover: #e0e0e0;
+  }
+}
